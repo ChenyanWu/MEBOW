@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## MEBOW: Monocular Estimation of Body Orientation In the Wild
 
 You can use the [editor on GitHub](https://github.com/ChenyanWu/MEBOW/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
