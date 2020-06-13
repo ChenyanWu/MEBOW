@@ -5,7 +5,7 @@ Body orientation estimation provides crucial visual cues in many applications, i
 
 Based on MEBOW, we established a simple baseline model for human body orientation estimation. We also developed a triple-source solution for 3D human pose estimation using our dataset as one of the three supervision sources. The code for baseline model and 3D human pose estimation will be available on [Github](https://github.com/ChenyanWu/MEBOW).
 ### Description
-![Image of MEBOW](/images/data_examples.pdf)
+![Image of MEBOW](/images/data_examples.png)
 ### Downloads
 Coming soon!
 
