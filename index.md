@@ -1,10 +1,13 @@
 ## MEBOW
 ### Monocular Estimation of Body Orientation In the Wild
-### **Overview** 
+### Overview
 Body orientation estimation provides crucial visual cues in many applications, including robotics and autonomous driving. It is particularly desirable when 3D pose estimation is difficult to infer due to poor image resolution, occlusion, or indistinguishable body parts. We present COCO-MEBOW (Monocular Estimation of Body Orientation in the Wild), a new large-scale dataset for orientation estimation from a single in-the-wild image. The body-orientation labels for around 130K human bodies within 55K images from the COCO dataset have been collected using an efficient and high-precision annotation pipeline.
 
 Based on MEBOW, we established a simple baseline model for human body orientation estimation. We also developed a triple-source solution for 3D human pose estimation using our dataset as one of the three supervision sources. The code for baseline model and 3D human pose estimation will be available on [Github](https://github.com/ChenyanWu/MEBOW).
-
+### Description
+![Image of MEBOW](/images/data_examples.pdf)
+### Downloads
+Coming soon!
 
 
 
