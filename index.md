@@ -7,7 +7,7 @@ Based on MEBOW, we established a simple baseline model for human body orientatio
 ### Description
 ![Image of MEBOW](/images/data_examples.png)
 ### Downloads
-MEBOW dataset belongs to Amazon Inc. The disclosure of the data set requires Amazon's approval. It is currently in the final stage of approval. Around August 12, the data set will be public.
+MEBOW dataset belongs to Amazon Inc. The disclosure of the dataset requires Amazon's approval. It is currently in the final stage of approval. The dataset will be public at around August 12.
 
 
 
