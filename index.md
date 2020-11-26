@@ -8,8 +8,17 @@ Based on MEBOW, we established a simple baseline model for human body orientatio
 ![Image of MEBOW](/images/data_examples.png)
 ### Downloads
 MEBOW dataset belongs to Amazon Inc. The disclosure of the dataset requires Amazon's approval. It is currently in the final stage of approval. The dataset will be public at around August 12.
-
-
+### Citation
+If you use our code or models in your research, please cite with:
+```
+@inproceedings{wu2020mebow,
+  title={MEBOW: Monocular Estimation of Body Orientation In the Wild},
+  author={Wu, Chenyan and Chen, Yukun and Luo, Jiajia and Su, Che-Chun and Dawane, Anuja and Hanzra, Bikramjot and Deng, Zhuo and Liu, Bilan and Wang, James Z and Kuo, Cheng-hao},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={3451--3461},
+  year={2020}
+}
+```
 
 
 
