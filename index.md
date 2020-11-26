@@ -1,14 +1,19 @@
 ## MEBOW
 ### Monocular Estimation of Body Orientation In the Wild
 ### Overview
-Body orientation estimation provides crucial visual cues in many applications, including robotics and autonomous driving. It is particularly desirable when 3D pose estimation is difficult to infer due to poor image resolution, occlusion, or indistinguishable body parts. We present COCO-MEBOW (Monocular Estimation of Body Orientation in the Wild), a new large-scale dataset for orientation estimation from a single in-the-wild image. The body-orientation labels for around 130K human bodies within 55K images from the COCO dataset have been collected using an efficient and high-precision annotation pipeline.
+Body orientation estimation provides crucial visual cues in many applications, including robotics and autonomous driving. It is particularly desirable when 3D pose estimation is difficult to infer due to poor image resolution, occlusion, or indistinguishable body parts. 
 
-Based on MEBOW, we established a simple baseline model for human body orientation estimation. We also developed a triple-source solution for 3D human pose estimation using our dataset as one of the three supervision sources. The code for baseline model and 3D human pose estimation will be available on [Github](https://github.com/ChenyanWu/MEBOW).
+We present COCO-MEBOW (Monocular Estimation of Body Orientation in the Wild), a new large-scale dataset for orientation estimation from a single in-the-wild image. The body-orientation labels for 133380 human bodies within 55K images from the COCO dataset have been collected using an efficient and high-precision annotation pipeline. There are 127844 human instance in training set and 5536 human instance in validation set.
+
+Based on MEBOW, we established a simple baseline model for human body orientation estimation. The code for baseline model will be available on [Github](https://github.com/ChenyanWu/MEBOW).
 ### Description
 ![Image of MEBOW](/images/data_examples.png)
 ### Downloads
 <!-- MEBOW dataset belongs to Amazon Inc. The disclosure of the dataset requires Amazon's approval. It is currently in the final stage of approval. The dataset will be public at around August 12. -->
-[Dataset description](/descirption.txt)
+<font color="#dd0000">MEBOW dataset is only for research purposes. Commercial use is not allowed.</font>
+Please email czw390@psu.edu if you want to get access to the dataset. You will usually get a reply within 24 hours (no more than 72 hours).
+<!-- [Dataset Download](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/czw390_psu_edu/EpdIRxS3_4hBpo9MvlWSiUcBEwAwjw5QgZ2kKFXH0T5hUw?e=U7wIEO)
+[Dataset Readme](/descirption.txt) -->
 ### Citation
 If you use our code or models in your research, please cite with:
 ```
