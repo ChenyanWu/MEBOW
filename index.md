@@ -11,7 +11,7 @@ Based on MEBOW, we established a simple baseline model for human body orientatio
 ### Downloads
 <!-- MEBOW dataset belongs to Amazon Inc. The disclosure of the dataset requires Amazon's approval. It is currently in the final stage of approval. The dataset will be public at around August 12. -->
 <font color="#dd0000">MEBOW dataset is only for research purposes. Commercial use is not allowed.</font>
-Please email czw390@psu.edu if you want to get access to the dataset. You will usually get a reply within 24 hours (no more than 72 hours).
+Please email <czw390@psu.edu> if you want to get access to the dataset. You will usually get a reply within 24 hours (no more than 72 hours).
 <!-- [Dataset Download](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/czw390_psu_edu/EpdIRxS3_4hBpo9MvlWSiUcBEwAwjw5QgZ2kKFXH0T5hUw?e=U7wIEO)
 [Dataset Readme](/descirption.txt) -->
 ### Citation
