@@ -46,7 +46,7 @@ In this work, we present COCO-MEBOW (Monocular Estimation of Body Orientation in
    └── requirements.txt
    ```
 
-6. Download pretrained models from the model zoo provided by ([GoogleDrive](https://drive.google.com/drive/folders/1hOTihvbyIxsm5ygDpbUuJ7O_tzv4oXjC?usp=sharing) or [OneDrive](https://1drv.ms/f/s!AhIXJn_J-blW231MH2krnmLq5kkQ))
+6. Download pretrained models from the model zoo provided by [HRnet](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch)([GoogleDrive](https://drive.google.com/drive/folders/1hOTihvbyIxsm5ygDpbUuJ7O_tzv4oXjC?usp=sharing) or [OneDrive](https://1drv.ms/f/s!AhIXJn_J-blW231MH2krnmLq5kkQ))
    ```
    ${POSE_ROOT}
     `-- models
