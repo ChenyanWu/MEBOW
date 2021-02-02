@@ -52,7 +52,7 @@ In this work, we present COCO-MEBOW (Monocular Estimation of Body Orientation in
     `-- models
         `-- pose_hrnet_w32_256x192.pth
    ```
-   
+  
 ### Data preparation
 **For MEBOW dataset**, please download images, bbox and keypoints annotation from [COCO download](http://cocodataset.org/#download). Please email <czw390@psu.edu> to get access to human body orientation annotation.
 Put them under {POSE_ROOT}/data, and make them look like this:
@@ -79,11 +79,18 @@ ${POSE_ROOT}
 ```
 **For TUD dataset**, in progress...
 
+### Trained HBOE model
+We also provide the trained HBOE model (MEBOW as training set). ([OneDrive](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/czw390_psu_edu/EoXLPTeNqHlCg7DgVvmRrDgB_DpkEupEUrrGATpUdvF6oQ?e=CQQ2KY))
 ### Training and Testing
 
 #### Traing on MEBOW dataset
 ```
 python tools/train.py --cfg experiments/coco/segm-4_lr1e-3.yaml
+```
+#### Testing on MEBOW dataset
+You should change TEST:MODEL_FILE to your own in "experiments/coco/segm-4_lr1e-3.yaml". If you want to test with our trained HBOE model, specify TEST:MODEL_FILE with the downloaded model path.
+```
+python tools/test.py --cfg experiments/coco/segm-4_lr1e-3.yaml
 ```
 ### Acknowledgement
 This repo is based on [HRnet](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch).

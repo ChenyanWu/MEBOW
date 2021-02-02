@@ -5,13 +5,13 @@ Body orientation estimation provides crucial visual cues in many applications, i
 
 We present COCO-MEBOW (Monocular Estimation of Body Orientation in the Wild), a new large-scale dataset for orientation estimation from a single in-the-wild image. The body-orientation labels for 133380 human bodies within 55K images from the COCO dataset have been collected using an efficient and high-precision annotation pipeline. There are 127844 human instance in training set and 5536 human instance in validation set.
 
-Based on MEBOW, we established a simple baseline model for human body orientation estimation. The code for baseline model will be available on [Github](https://github.com/ChenyanWu/MEBOW).
+Based on MEBOW, we established a simple baseline model for human body orientation estimation. The code and trained models are available on [Github](https://github.com/ChenyanWu/MEBOW).
 ### Description
 ![Image of MEBOW](/images/data_examples.png)
 ### Downloads
 <!-- MEBOW dataset belongs to Amazon Inc. The disclosure of the dataset requires Amazon's approval. It is currently in the final stage of approval. The dataset will be public at around August 12. -->
 <font color="#dd0000">MEBOW dataset is only for research purposes. Commercial use is not allowed.</font>
-Images of MEBOW all come from COCO dataset. Please download all the images from <https://cocodataset.org/#download>. 
+Images of MEBOW all come from COCO dataset. Please download images from <https://cocodataset.org/#download>. Click "2017 Train images [118K/18GB]" and "2017 Val images [5K/1GB]" in the COCO download page.
 Please email <czw390@psu.edu> to get access to human body orientation annotation. You will usually get a reply within 24 hours (no more than 72 hours).
 <!-- [Dataset Download](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/czw390_psu_edu/EpdIRxS3_4hBpo9MvlWSiUcBEwAwjw5QgZ2kKFXH0T5hUw?e=U7wIEO)
 [Dataset Readme](/descirption.txt) -->
