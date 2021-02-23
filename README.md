@@ -7,7 +7,7 @@ In this work, we present COCO-MEBOW (Monocular Estimation of Body Orientation in
 ## Quick start
 ### Installation
 1. Install pytorch >= v1.0.0 following [official instruction](https://pytorch.org/).
-2. Clone this repo, and we'll call the directory that you cloned as ${POSE_ROOT}.
+2. Clone this repo, and we'll call the directory that you cloned as ${HBOE_ROOT}.
 3. Install dependencies:
    ```
    pip install -r requirements.txt
@@ -34,7 +34,7 @@ In this work, we present COCO-MEBOW (Monocular Estimation of Body Orientation in
    Your directory tree should look like this:
 
    ```
-   ${POSE_ROOT}
+   ${HBOE_ROOT}
    ├── data
    ├── experiments
    ├── lib
@@ -48,16 +48,16 @@ In this work, we present COCO-MEBOW (Monocular Estimation of Body Orientation in
 
 6. Download pretrained models from the model zoo provided by [HRnet](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch)([GoogleDrive](https://drive.google.com/drive/folders/1hOTihvbyIxsm5ygDpbUuJ7O_tzv4oXjC?usp=sharing) or [OneDrive](https://1drv.ms/f/s!AhIXJn_J-blW231MH2krnmLq5kkQ))
    ```
-   ${POSE_ROOT}
+   ${HBOE_ROOT}
     `-- models
         `-- pose_hrnet_w32_256x192.pth
    ```
   
 ### Data preparation
 **For MEBOW dataset**, please download images, bbox and keypoints annotation from [COCO download](http://cocodataset.org/#download). Please email <czw390@psu.edu> to get access to human body orientation annotation.
-Put them under {POSE_ROOT}/data, and make them look like this:
+Put them under {HBOE_ROOT}/data, and make them look like this:
 ```
-${POSE_ROOT}
+${HBOE_ROOT}
 |-- data
 `-- |-- coco
     `-- |-- annotations
@@ -77,8 +77,21 @@ ${POSE_ROOT}
                 |-- 000000000632.jpg
                 |-- ... 
 ```
-**For TUD dataset**, in progress...
-
+**For TUD dataset**, please download images from [the web page of TUD](https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/people-detection-pose-estimation-and-tracking/monocular-3d-pose-estimation-and-tracking-by-detection). The page also provides 8-bin orientation annotation. Continuous orientation annotation for TUD dataset can be found from [here](http://www.kotahara.com/publications.html). We provide our precessed TUD annotation from [here](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/czw390_psu_edu/EqU8hWh-NgFOoNmIBEgE5RYBn61ZsFudKHCgbEH9-_V9DA?e=PZzshY).
+Put TUD images and our processed annotation under {HBOE_ROOT}/data, and make them look like this:
+```
+${HBOE_ROOT}
+|-- data
+`-- |-- tud
+    `-- |-- annot
+        |   |-- train_tud.pkl
+        |   |-- val_tud.pkl
+        |   `-- test_tud.pkl
+        `-- images
+            |-- train
+            |-- validate
+            `-- test
+```
 ### Trained HBOE model
 We also provide the trained HBOE model (MEBOW as training set). ([OneDrive](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/czw390_psu_edu/EoXLPTeNqHlCg7DgVvmRrDgB_DpkEupEUrrGATpUdvF6oQ?e=CQQ2KY))
 ### Training and Testing
@@ -86,6 +99,10 @@ We also provide the trained HBOE model (MEBOW as training set). ([OneDrive](http
 #### Traing on MEBOW dataset
 ```
 python tools/train.py --cfg experiments/coco/segm-4_lr1e-3.yaml
+```
+#### Traing on TUD dataset
+```
+python tools/train.py --cfg experiments/tud/lr1e-3.yaml
 ```
 #### Testing on MEBOW dataset
 You should change TEST:MODEL_FILE to your own in "experiments/coco/segm-4_lr1e-3.yaml". If you want to test with our trained HBOE model, specify TEST:MODEL_FILE with the downloaded model path.
