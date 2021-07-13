@@ -89,7 +89,7 @@ def continous_comp_deg_error(output, gt_degree):
                         mid += 1
                         if diff <= 5:
                             excellent += 1
-    return result/len(output), excellent, mid, poor_225, poor, poor_45, gt_degree, index_degree*5
+    return result/len(output), excellent, mid, poor_225, poor, poor_45, gt_degree, index_degree*5, len(output)
 
 def comp_deg_error(output, degree):
     result = 0
@@ -115,7 +115,7 @@ def comp_deg_error(output, degree):
                         mid += 1
                         if diff <= 5:
                             excellent += 1
-    return result/len(output), excellent, mid, poor_225, poor, poor_45,degree*5 ,index_degree * 5
+    return result/len(output), excellent, mid, poor_225, poor, poor_45,degree*5 ,index_degree * 5, len(output)
 
 
 
