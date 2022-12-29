@@ -96,11 +96,11 @@ ${HBOE_ROOT}
 We also provide the trained HBOE model (MEBOW as training set). ([OneDrive](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/czw390_psu_edu/EoXLPTeNqHlCg7DgVvmRrDgB_DpkEupEUrrGATpUdvF6oQ?e=CQQ2KY))
 ### Training and Testing
 
-#### Traing on MEBOW dataset
+#### Training on MEBOW dataset
 ```
 python tools/train.py --cfg experiments/coco/segm-4_lr1e-3.yaml
 ```
-#### Traing on TUD dataset
+#### Training on TUD dataset
 ```
 python tools/train.py --cfg experiments/tud/lr1e-3.yaml
 ```
