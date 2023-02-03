@@ -54,8 +54,9 @@ In this work, we present COCO-MEBOW (Monocular Estimation of Body Orientation in
    ```
   
 ### Data preparation
-**For MEBOW dataset**, please download images, bbox and keypoints annotation from [COCO download](http://cocodataset.org/#download). Please email <czw390@psu.edu> to get access to human body orientation annotation.
-Put them under {HBOE_ROOT}/data, and make them look like this:
+**For MEBOW dataset**, please download images, bboxes and keypoints from [COCO download](http://cocodataset.org/#download). Please email <czw390@psu.edu> to get access to the human body orientation annotations. **Note**: For academic researchers, please use your educational email address. You will directly get access to the annotations via your educational email. For researchers in business companies, please send a formal email (with company title and signature) to promise that you will not use the annotations for commercial purposes. Sorry for the inconvenience.
+
+Put images and all the annotations under {HBOE_ROOT}/data, and make them look like this:
 ```
 ${HBOE_ROOT}
 |-- data
