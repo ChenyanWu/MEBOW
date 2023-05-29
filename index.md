@@ -12,7 +12,7 @@ Based on MEBOW, we established a simple baseline model for human body orientatio
 <!-- MEBOW dataset belongs to Amazon Inc. The disclosure of the dataset requires Amazon's approval. It is currently in the final stage of approval. The dataset will be public at around August 12. -->
 <font color="#dd0000">MEBOW dataset is only for research purposes. Commercial use is not allowed.</font>
 Images of MEBOW all come from COCO dataset. Please download images from <https://cocodataset.org/#download>. Click "2017 Train images [118K/18GB]" and "2017 Val images [5K/1GB]" in the COCO download page.
-Please email <czw390@psu.edu> to get access to human body orientation annotation. You will usually get a reply within 24 hours (no more than 72 hours). **Note**: For academic researchers, please use your educational email address. You will directly get access to the dataset via your educational email. For researchers in business companies, please send a formal letter (with company title and signature) to promise that you will not use the dataset for commercial purposes. Sorry for the inconvenience.
+Please email <czw390@psu.edu> to get access to human body orientation annotation. You will usually get a reply within 24 hours (no more than 72 hours). **Note**: For academic researchers, please use your educational email address. You will directly get access to the dataset via your educational email. For researchers in business companies, please send a formal letter (with the company name and your signature) to promise that you will not use the dataset for commercial purposes. Sorry for the inconvenience.
 
 ### Citation
 If you use our code or models in your research, please cite with:
