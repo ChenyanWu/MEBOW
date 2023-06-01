@@ -4,8 +4,7 @@
 This is an official pytorch implementation of [*MEBOW: Monocular Estimation of Body Orientation In the Wild*](https://openaccess.thecvf.com/content_CVPR_2020/papers/Wu_MEBOW_Monocular_Estimation_of_Body_Orientation_in_the_Wild_CVPR_2020_paper.pdf). 
 In this work, we present COCO-MEBOW (Monocular Estimation of Body Orientation in the Wild), a new large-scale dataset for orientation estimation from a single in-the-wild image. Based on COCO-MEBOW, we established a simple baseline model for human body orientation estimation. This repo provides the code.
 
-## Quick start
-### Installation
+## Installation
 1. Install pytorch >= v1.0.0 following [official instruction](https://pytorch.org/).
 2. Clone this repo, and we'll call the directory that you cloned as ${HBOE_ROOT}.
 3. Install dependencies:
@@ -52,8 +51,16 @@ In this work, we present COCO-MEBOW (Monocular Estimation of Body Orientation in
     `-- models
         `-- pose_hrnet_w32_256x192.pth
    ```
-  
-### Data preparation
+## Quick Demo
+- Download our trained [HBOE model](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/czw390_psu_edu/EoXLPTeNqHlCg7DgVvmRrDgB_DpkEupEUrrGATpUdvF6oQ?e=CQQ2KY), and than place it under the folder `models`.
+   ```
+   ${HBOE_ROOT}
+    `-- models
+        `-- model_hboe.pth
+   ```
+- Run `python tools/demo.py --cfg experiments/coco/segm-4_lr1e-3.yaml images/demo.jpg`. You may use the path of your own image to replace `images/demo.jpg`. For better performance, your image should be a human-cropped image. The ratio of height to width should be around 4:3.
+
+## Data preparation
 **For MEBOW dataset**, please download images, bboxes and keypoints from [COCO download](http://cocodataset.org/#download). Please email <czw390@psu.edu> to get access to the human body orientation annotations. **Note**: For academic researchers, please use your educational email address. You will directly get access to the annotations via your educational email. For researchers in business companies, please send a formal letter (with the company name and your signature) to promise that you will not use the annotations for commercial purposes. Sorry for the inconvenience.
 
 Put images and all the annotations under {HBOE_ROOT}/data, and make them look like this:
@@ -93,9 +100,9 @@ ${HBOE_ROOT}
             |-- validate
             `-- test
 ```
-### Trained HBOE model
+## Trained HBOE model
 We also provide the trained HBOE model (MEBOW as training set). ([OneDrive](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/czw390_psu_edu/EoXLPTeNqHlCg7DgVvmRrDgB_DpkEupEUrrGATpUdvF6oQ?e=CQQ2KY))
-### Training and Testing
+## Training and Testing
 
 #### Training on MEBOW dataset
 ```
@@ -110,10 +117,10 @@ You should change TEST:MODEL_FILE to your own in "experiments/coco/segm-4_lr1e-3
 ```
 python tools/test.py --cfg experiments/coco/segm-4_lr1e-3.yaml
 ```
-### Acknowledgement
+## Acknowledgement
 This repo is based on [HRnet](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch).
 
-### Citation
+## Citation
 If you use our dataset or models in your research, please cite with:
 ```
 @inproceedings{wu2020mebow,
