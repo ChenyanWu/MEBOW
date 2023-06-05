@@ -52,7 +52,7 @@ In this work, we present COCO-MEBOW (Monocular Estimation of Body Orientation in
         `-- pose_hrnet_w32_256x192.pth
    ```
 ## Quick Demo
-- Download our trained [HBOE model](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/czw390_psu_edu/EoXLPTeNqHlCg7DgVvmRrDgB_DpkEupEUrrGATpUdvF6oQ?e=CQQ2KY), and than place it under the folder `models`.
+- Download our trained [HBOE model](https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/czw390_psu_edu/EoXLPTeNqHlCg7DgVvmRrDgB_DpkEupEUrrGATpUdvF6oQ?e=CQQ2KY), and then place it under the folder `models`.
    ```
    ${HBOE_ROOT}
     `-- models
